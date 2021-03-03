@@ -3,8 +3,10 @@
 const express = require('express');
 //definir base de datos
 const connectDB = require('./config/db');
-
+//se crea el cros
+var cors = require('cors');
 const app = express();
+
 
 // Connectar base de datos
 connectDB();
