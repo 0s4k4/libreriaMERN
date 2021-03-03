@@ -1,11 +1,12 @@
 // app.js
 
 const express = require('express');
+//definir base de datos
 const connectDB = require('./config/db');
 
 const app = express();
 
-// Connect Database
+// Connectar base de datos
 connectDB();
 
 app.get('/', (req, res) => res.send('Hello world!'));
